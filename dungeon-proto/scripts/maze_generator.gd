@@ -3,13 +3,15 @@ extends Node
 
 signal maze_generated
 
-@export var dimensions : Vector2i = Vector2i(12, 7)
+@export var dimensions : Vector2i = Vector2i(1, 1)
 
-var x_max = dimensions.x - 1
-var y_max = dimensions.y - 1
+var x_max : int
+var y_max : int
 var maze : Array
 
 func _ready():
+	x_max = dimensions.x - 1
+	y_max = dimensions.y - 1
 	generate_maze()
 
 func generate_maze():

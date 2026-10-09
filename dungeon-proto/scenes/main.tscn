@@ -9,3 +9,4 @@
 maze_generator = NodePath("../MazeGenerator")
 
 [node name="MazeGenerator" parent="." unique_id=193214712 instance=ExtResource("1_0wfyh")]
+dimensions = Vector2i(25, 10)
