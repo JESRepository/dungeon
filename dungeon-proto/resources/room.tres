@@ -1,0 +1,7 @@
+[gd_resource type="Resource" format=3 uid="uid://bmboe3mhktyn4"]
+
+[ext_resource type="Script" uid="uid://cg8hxpc2612k3" path="res://resources/room.gd" id="1_tkm8e"]
+
+[resource]
+script = ExtResource("1_tkm8e")
+walls = null
