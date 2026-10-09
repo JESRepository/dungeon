@@ -51,11 +51,10 @@ func convert_walls_to_index(walls: Dictionary[Room.Direction, bool]) -> Vector2i
 	new_x = value % 4
 	index.x = new_x
 	
-	print(str(value) + " : " + str(index))
+	#print(str(value) + " : " + str(index))
 	
 	return index
 	
 
 func _on_maze_generated() -> void:
-	print("received")
 	draw_maze()
