@@ -9,4 +9,18 @@
 maze_generator = NodePath("../MazeGenerator")
 
 [node name="MazeGenerator" parent="." unique_id=193214712 instance=ExtResource("1_0wfyh")]
-dimensions = Vector2i(25, 10)
+dimensions = Vector2i(10, 10)
+
+[node name="Button" type="Button" parent="MazeGenerator" unique_id=1135767932]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -80.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Generate"
+
+[connection signal="pressed" from="MazeGenerator/Button" to="MazeGenerator" method="_on_button_pressed"]

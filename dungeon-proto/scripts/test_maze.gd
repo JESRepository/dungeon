@@ -19,7 +19,6 @@ func draw_maze() -> void:
 			var curr_coords := Vector2i(x_index, y_index)
 			set_cell(curr_coords, 0, tile_index)
 			x_index += 1
-		print()
 		y_index += 1
 
 func convert_walls_to_index(walls: Dictionary[Room.Direction, bool]) -> Vector2i:
